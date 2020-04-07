@@ -1,0 +1,18 @@
+let data = [
+    {"url" : "./media/photos/6.jpg"},
+    {"url" : "./media/photos/8.jpg"},
+    {"url" : "./media/photos/3.jpg"},
+    {"url" : "./media/photos/2.jpg"},
+    {"url" : "./media/photos/5.jpg"},
+    {"url" : "./media/photos/12.jpg"},
+    {"url" : "./media/photos/1.jpg"},
+    {"url" : "./media/photos/7.jpg"},
+    {"url" : "./media/photos/4.jpg"},
+    {"url" : "./media/photos/9.jpg"},
+    {"url" : "./media/photos/10.jpg"},
+    {"url" : "./media/photos/7.jpg"},
+    {"url" : "./media/photos/14.jpg"},
+    {"url" : "./media/photos/15.jpg"}
+ ]
+ 
+ 

@@ -1,0 +1,580 @@
+									/*GENERAL*/
+
+/* POLICE */
+@font-face {
+	font-family: 'fatHelv';
+	src: url('../police/HelveticaNeueLTPro-Hv.otf');
+	src: url('../police/HelveticaNeueLTPro-Hv.otf') format('opentype')
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'slimHelv';
+	src: url('../police/HelveticaNeueLTPro-Lt.otf');
+	src: url('../police/HelveticaNeueLTPro-Lt.otf') format('opentype')
+	font-weight: normal;
+	font-style: normal;
+}
+@-moz-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+@keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "slimHelv", sans-sherif;
+	max-width: 100%;
+	background-color: #080808;
+	color: white;
+	overflow-x: hidden;
+	opacity: 1;
+	transition: 3s opacity;
+}
+
+body.fade-out {
+	opacity: 0;
+	transition: none;
+}
+
+hr { 
+	display: block; height: 1px;
+	border: 0; 
+	border-top: 0.001em solid white;
+	margin-top: 40px;
+	margin-bottom: 40px;    
+}
+
+.hr50 {
+	width: 50%;
+} 
+
+.row {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/*POLICE*/
+
+.fat {
+	font-family: 'fatHelv'
+}
+
+.slim {
+	font-family: 'slimHelv'
+}
+
+.t {
+	text-align: center;
+}
+
+.und {
+	margin-top: 60px;
+}
+
+/*NAVBAR*/
+
+/*NAVBAR INDEX*/
+.navbar {
+	text-transform: uppercase;
+	width: auto; 
+	position: fixed;
+}
+
+.navbar-brand {
+	width: 100px;
+}
+
+
+/*NAVBAR OTHER PAGES*/
+.navProut {
+	background-color: #080808;
+	width: 100%;
+}
+
+.navIndex {
+	background-color: rgba(0, 0, 0, 0.459);
+	width: 100%;
+}
+
+.nav-link {
+	transition-property: color font-size font-weight;
+	font-family: "fatHelv";
+	transition-duration: 0.3s;
+	color: white !important;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding-top: 18px
+}
+
+.nav-link:hover {
+	border-bottom: 1px solid white;
+	color: white;
+}
+
+#navbarNav {
+	text-align: right;
+}
+
+
+.currentNav {
+	border-bottom: 1px solid white;
+	color: white;
+}
+
+.tMenu {
+	display: inline-block;
+	text-align: right;
+	font-weight: small !important;
+}
+
+.logo {
+	height: 100%;
+	width: 100%;
+	filter: invert(100%);
+}
+
+.underNav {
+	padding-top: 130px;
+}
+
+.navbar-toggler { 
+	border-color: white; 
+} 
+
+/*FOOTER*/
+
+.footer {
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.footerLogo {
+	height: 4%;
+	width: 4%;
+	filter: invert(100%);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footerText {
+	font-family: "slimHelv";
+	font-weight: 800;
+}
+
+.margFooterElements {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/*PROJECTS PAGE*/
+
+.filterCategory {
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+.filterTittles {
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+	font-size: small;
+}
+
+.hrVid {
+	display: block; height: 1px;
+	border: 0; 
+	margin-right: 100%;
+	border-top: 0.001em solid white;
+	margin-top: 0px;
+	margin-bottom: 0px;   
+	width: 50%;
+	opacity: 0; 
+}
+
+.hrVidG {
+	display: block; height: 1px;
+	border: 0; 
+	margin-left: 50%;
+	border-top: 0.001em solid white;
+	margin-top: 0px;
+	margin-bottom: 0px;   
+	width: 50%;
+	opacity: 0; 
+}
+
+.diNone {
+	opacity: 0;
+	height: 0px;
+    visibility: hidden;
+	-webkit-transition: all 0.5;
+    -moz-transition: all 0.5;
+    -o-transition: all 0.5;
+    transition:all 0.5;
+}
+
+.diYe {
+    height: auto;
+	visibility: visible;
+	opacity: 1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    transition:all 2s;
+}
+
+.currentFilterCategory {
+	border-top: 1px solid white;
+}
+
+.filterTittles:hover {
+	cursor: pointer;
+	border-top: 1px solid white;
+}
+
+.textVideoRight {
+	margin: auto;
+	margin-top: 25px;
+	color: white;
+	padding-left: 2%;
+	padding-right: 5%;
+}
+
+.textVideoLeft {
+	margin: auto;
+	margin-top: 25px;
+	color: white;
+	padding-left: 5%;
+	padding-right: 2%;
+}
+
+.textDescrition {
+	font-size: small;
+}
+
+.videoProjects {
+	margin: auto;
+	padding-left: 8%;
+	padding-right: 8%;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.vidDiv {
+	margin-top: 200px;
+	margin-bottom: 170px;
+}
+
+.moreInfo {
+	font-size: small;
+	font-family: 'fatHelv';
+}
+
+/* #mobKindEtc {
+	text-align: default;
+} */
+
+p span {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+p span:hover {
+	cursor: pointer;
+}
+
+p span:hover::after {
+	position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 1px; 
+    border-bottom: 1px solid white; 
+    content: ""
+}
+
+
+
+/*PHOTOS*/
+
+
+.img-hover-zoom {
+	overflow: hidden; 
+	margin-bottom: 20px;
+  }
+  
+.img-hover-zoom img {
+	transition: transform 1s ease;
+}
+  
+.img-hover-zoom:hover img {
+	transform: scale(1.1);
+}
+
+
+.hideme {
+	opacity: 0;
+}
+
+.fadesIn {
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 2s linear;
+}
+
+.gallery {
+	margin-left: 25%;
+	margin-right: 25%;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; 
+padding-top: 200px;
+padding-bottom: 100px;
+}
+
+
+@media (max-width: 1000px) {
+.gallery {
+margin-left: 15%;
+margin-right: 15%;
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+padding-top: 100px;
+}
+}
+
+/*ABOUT PAGE*/
+
+.skills {
+	position: relative;
+}
+
+.skills:after {
+	content: '';
+	height: 25%;
+	width: 1px;
+  
+	position: absolute;
+	right: 0;
+	top: 0;
+  
+	background-color: white;
+  }
+  .skills:before {
+	content: '';
+	height: 25%;
+	width: 1px;
+  
+	position: absolute;
+	left: 0;
+	top: 0;
+  
+	background-color: white;
+  }
+
+.skillzSection {
+	text-align: center;
+}
+
+.skillsText {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.skillsMarg {
+	margin-top: 50px;
+}
+
+#thingsText {
+	margin-top: 100px;
+}
+
+.mobileSkills {
+	margin-top: 100px;
+}
+
+/*CONTACT*/
+
+.form-group {
+	margin: auto;
+}
+
+.network-name, .fa {
+	color: white;
+}
+
+.sub {
+	border: 1px solid white;
+	color: white;
+}
+
+input[type="text"], textarea {
+	background-color : #0a0a0a; 
+	color: white;
+  }
+
+  input[type="email"], textarea {
+	background-color : #0a0a0a; 
+	color: white;
+  }
+
+textarea.form-control {
+	background-color: #0a0a0a;
+	color: white;
+}
+
+.mobBackground {
+	display: none;
+}
+
+
+
+@media (max-width: 850px) {
+	.footer {
+		display: none;
+	}
+
+	.enterSect {
+		display: none;
+	}
+
+	.filterCategory {
+		display: none;
+	}
+
+	.videoProjectsMob {
+		margin: auto;
+		padding-left: 0%;
+		padding-right: 0%;
+		position:absolute;
+		top:0;
+		left:0;
+		margin-top: 20px;
+		width:100%;
+		height:100%;
+	}
+
+	#vidMob0  {
+		margin-top: 3rem;
+	}
+
+	.skillsText {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	.leoBio {
+		text-align: center ;
+	}
+
+	.projectsBody {
+		background-image: url("../media/photos/14.jpg");
+		background-size: cover;
+		padding-top: 10rem;
+	}
+
+	.photoBody {
+		background-image: url("../media/photos/14.jpg");
+		background-size: cover;
+	}
+
+	.aboutBody {
+		background-image: url("../media/photos/14.jpg");
+		background-size: cover;
+	}
+
+	.contactBody {
+		background-image: url("../media/photos/14.jpg");
+		background-size: cover;
+	}
+
+	input[type="text"], textarea {
+		background-color : transparent; 
+		color: white;
+	  }
+	
+	  input[type="email"], textarea {
+		background-color : transparent; 
+		color: white;
+	  }
+	
+	textarea.form-control {
+		background-color: transparent;
+		color: white;
+	}
+	
+
+	/* .enterMob {
+		margin-top: 60vh;
+		width: 40%;
+		filter: invert(1);
+		display: inline-block;
+	} */
+
+	/* .bodySectEnter {
+		display: none;
+	} */
+
+	.underNav {
+		padding-top: 30px;
+	}
+
+	.navbar{
+    position: sticky;
+    top: auto;
+	}
+
+	.vidContainer{
+		display: none;
+	}
+	.moreInfo{
+		color: white;
+		font-family: 'slimHelv';
+		background-color: transparent;
+		border: none;
+		text-align: left;
+	}
+
+	.background {
+		display: none;
+	}
+
+	.mobBackground {
+		position: fixed; 
+		z-index: -99; 
+		width: 250%; 
+		left: -70%;
+		overflow: hidden;;
+		display: block;
+		background-color: white;
+	}
+
+}

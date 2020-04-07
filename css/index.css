@@ -1,0 +1,218 @@
+
+@font-face {
+	font-family: 'fatHelv';
+	src: url('../police/HelveticaNeueLTPro-Hv.otf');
+	src: url('../police/HelveticaNeueLTPro-Hv.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body.fade-out {
+	opacity: 0;
+	transition: none;
+}
+
+.t {
+	text-align: center;
+}
+
+.und {
+	margin-top: 60px;
+}
+
+/*NAVBAR INDEX*/
+.navbar {
+	text-transform: uppercase;
+	width: auto; 
+	position: fixed;
+}
+
+.navbar-brand {
+	width: 100px;
+}
+
+
+/*NAVBAR OTHER PAGES*/
+.navProut {
+	background-color: #080808;
+	width: 100%;
+}
+
+.navIndex {
+	background-color: rgba(0, 0, 0, 0.459);
+	width: 100%;
+}
+
+.nav-link {
+	transition-property: color font-size font-weight;
+	font-family: "fatHelv";
+	transition-duration: 0.3s;
+	color: white !important;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding-top: 18px
+}
+
+.nav-link:hover {
+	border-bottom: 1px solid white;
+	color: white;
+}
+
+#navbarNav {
+	text-align: right;
+}
+
+
+.currentNav {
+	border-bottom: 1px solid white;
+	color: white;
+}
+
+.tMenu {
+	display: inline-block;
+	text-align: right;
+	font-weight: small !important;
+}
+
+.logo {
+	height: 100%;
+	width: 100%;
+	filter: invert(100%);
+}
+
+.underNav {
+	padding-top: 130px;
+}
+
+.navbar-toggler { 
+	border-color: white; 
+} 
+
+/*FOOTER*/
+
+.footer {
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+/*INDEX*/
+
+.background {
+	position: fixed; 
+	z-index: -99; 
+	width: 120%; 
+	left: -10%;
+	top: -16%;
+	background-color: white;
+}
+
+
+.enterSect {
+	width: 100%;
+	text-align: center;
+	height: 100vh;
+	color: black;
+	padding-top: 40%;
+}
+
+.bodySectEnter:hover {
+	cursor: default;
+}
+
+.enterButt {
+	width: 7%;
+	filter: invert(1);
+}
+
+.enterButt:hover {
+	cursor: pointer;
+}
+
+/*PROJECTS PAGE*/
+
+
+.enterMob {
+	display: none;
+}
+
+.mobBackground {
+	display: none;
+}
+
+
+
+@media (max-width: 850px) {
+	.footer {
+		display: none;
+	}
+
+    .nav-link{
+		font-family: 'Roboto';
+    }
+
+	.enterSect {
+		display: none;
+	}
+
+	.bodyMob {
+		width: 100%;
+		text-align: center;
+		height: 100vh;
+	}
+	.indexBody {
+		background-image: url("../media/back-img.jpg");
+		background-size: cover;
+		overflow-y: hidden;
+	}
+
+	.enterMob {
+		margin-top: 60vh;
+		width: 40%;
+		filter: invert(1);
+		display: inline-block;
+	}
+
+	.bodySectEnter {
+		display: none;
+	}
+
+	.underNav {
+		padding-top: 30px;
+	}
+
+	.navbar{
+    position: sticky;
+    top: auto;
+	}
+
+	.vidContainer{
+		display: none;
+	}
+
+
+	.background {
+		display: none;
+	}
+
+	.mobBackground {
+		position: fixed; 
+		z-index: -99; 
+		width: 250%; 
+		left: -70%;
+		overflow: hidden;;
+		display: block;
+		background-color: white;
+	}
+
+}
+
+
+.videoMob {
+	text-align: center;
+}
